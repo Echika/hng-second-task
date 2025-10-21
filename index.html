@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - HNG13 Stage 0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about_me.html">About</a></li>
+        </ul>
+    </nav>
+   <div class="profile-container">
+    <article data-testid="test-profile-card" class="card">
+        <div class="card-content">
+            <div class="profile-header">
+                <figure>
+                    <img 
+                        src="./echika.jpg" 
+                        alt="Profile picture of Echika, a software developer smiling at the camera"
+                        data-testid="test-user-avatar"
+                    >
+                </figure>
+                
+                <div>
+                    <header>
+                        <h2 data-testid="test-user-name">Echika Raphael</h2>
+                    </header>
+                    
+                    <p data-testid="test-user-bio">
+                        A frontend developer passionate about creating elegant solutions to complex problems. 
+                        I love building user-friendly applications and contributing to open-source projects.
+                    </p>
+                </div>
+            </div>
+
+            <div class="time-display">
+                <strong>Current Time (ms): </strong>
+                <span data-testid="test-user-time" id="timeDisplay">0</span>
+            </div>
+
+            <nav data-testid="test-user-social-links" aria-label="Social media links">
+                <ul>
+                    <li>
+                        <a 
+                            href="https://twitter.com/@echika_raphael" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-twitter"
+                        >
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://github.com/Echika" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-github"
+                        >
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://linkedin.com/in/echika-raphael-774668290" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-linkedin"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="lists-container">
+                <section>
+                    <h3>My Hobbies</h3>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Coding and building projects</li>
+                        <li>Reading tech blogs and documentation</li>
+                        <li>Studying and having time with my kids</li>
+                        <li>Brainstorming</li>
+                        <li>Learning new programming languages</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>My Dislikes</h3>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Poorly documented code</li>
+                        <li>Skipping code reviews</li>
+                        <li>Unnecessary meetings</li>
+                        <li>Technical debt accumulation</li>
+                        <li>Browser compatibility issues</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
