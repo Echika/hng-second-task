@@ -7,7 +7,7 @@ if (timeDisplay) {
     }
     
     updateTime();
-    setInterval(updateTime, 1);
+    setInterval(updateTime, 1000);
 }
 
 // Contact Form Validation Script (for contact page)
